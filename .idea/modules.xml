@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/XHttp.iml" filepath="$PROJECT_DIR$/XHttp.iml" group="XHttp" />
+      <module fileurl="file://$PROJECT_DIR$/xhttp/XHttp-xhttp.iml" filepath="$PROJECT_DIR$/xhttp/XHttp-xhttp.iml" group="XHttp/xhttp" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="XHttp/app" />
+      <module fileurl="file://$PROJECT_DIR$/xhttp/xhttp-logging-interceptor/xhttp-logging-interceptor.iml" filepath="$PROJECT_DIR$/xhttp/xhttp-logging-interceptor/xhttp-logging-interceptor.iml" group="XHttp/xhttp/xhttp-logging-interceptor" />
+      <module fileurl="file://$PROJECT_DIR$/xhttp/xhttp/xhttp-xhttp.iml" filepath="$PROJECT_DIR$/xhttp/xhttp/xhttp-xhttp.iml" group="XHttp/xhttp/xhttp" />
     </modules>
   </component>
 </project>

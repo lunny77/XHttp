@@ -1,2 +1,4 @@
 rootProject.name='XHttp'
 include ':app'
+include ':xhttp:xhttp'
+include ':xhttp:xhttp-logging-interceptor'
