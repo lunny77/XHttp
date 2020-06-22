@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: xhttp-xhttp.xhttp">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/xhttp/xhttp/build/libs/xhttp.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
