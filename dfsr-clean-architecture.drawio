@@ -1,0 +1,136 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="第 1 页" id="I9LyScK3oGpTjdKKHHPA">
+    <mxGraphModel dx="2657" dy="1543" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1720" pageHeight="1600" background="#FFFFFF" math="0" shadow="0" adaptiveColors="auto">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=32;align=left;" value="&lt;b&gt;DFSR-final · Clean Architecture 职责视图&lt;/b&gt;" vertex="1">
+          <mxGeometry height="55" width="1600" x="40" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=17;align=left;fontColor=#5D7287;" value="当前工作区架构  ·  2026-09-29  ·  同心圆表达职责，底部箭头表达代码依赖；不是数据流图" vertex="1">
+          <mxGeometry height="35" width="1600" x="40" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="outer" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;ellipse;container=1;pointerEvents=0;fillColor=#E8F0FB;strokeColor=#7B9CCD;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="920" width="920" x="40" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="out-title" parent="outer" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=24;" value="&lt;b&gt;04　框架、设备与外部系统&lt;/b&gt;" vertex="1">
+          <mxGeometry height="38" width="620" x="150" y="22" as="geometry" />
+        </mxCell>
+        <mxCell id="out-detail" parent="outer" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=18;" value="Android / Hilt / Binder / JNI&lt;br&gt;Unity SDK · 百度 SDK · Mega / DFTC 车机 SDK&lt;br&gt;智驾域 SOME/IP · PCAP / 原始录制 · 显示设备" vertex="1">
+          <mxGeometry height="86" width="590" x="165" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="adapters" parent="outer" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;ellipse;container=1;pointerEvents=0;fillColor=#E5F3E8;strokeColor=#6AA880;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="720" width="720" x="100" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ad-title" parent="adapters" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=23;" value="&lt;b&gt;03　接口适配与交互入口&lt;/b&gt;" vertex="1">
+          <mxGeometry height="38" width="560" x="80" y="24" as="geometry" />
+        </mxCell>
+        <mxCell id="ad-detail" parent="adapters" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=17;" value="HAD / 平台 / SOME-IP / Unity / 仪表 / HUD adapters&lt;br&gt;百度协议转换与 Android SDK 桥接&lt;br&gt;app-shell 的 Android 入口 · 行车/泊车/导航页面骨架" vertex="1">
+          <mxGeometry height="80" width="550" x="85" y="603" as="geometry" />
+        </mxCell>
+        <mxCell id="usecases" parent="adapters" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;ellipse;container=1;pointerEvents=0;fillColor=#FFF1DE;strokeColor=#DDA357;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="520" width="520" x="100" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="uc-title" parent="usecases" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=21;" value="&lt;b&gt;02　应用编排与会话策略&lt;/b&gt;" vertex="1">
+          <mxGeometry height="38" width="450" x="35" y="22" as="geometry" />
+        </mxCell>
+        <mxCell id="uc-detail" parent="usecases" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=15;" value="runtime:* 的源互斥、解码流水线、融合会话、投屏协调&lt;br&gt;ViewAngleSession · PlatformStartup 的启停协调&lt;br&gt;通过端口连接外部能力" vertex="1">
+          <mxGeometry height="70" width="464" x="28" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="domain" parent="usecases" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;ellipse;container=1;pointerEvents=0;fillColor=#FFF8C9;strokeColor=#C5AD41;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="320" width="320" x="100" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="domain-title" parent="domain" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=22;" value="&lt;b&gt;01　领域规则与模型&lt;/b&gt;" vertex="1">
+          <mxGeometry height="45" width="270" x="25" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="domain-content" parent="domain" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=17;" value="&lt;b&gt;domain&lt;/b&gt;&lt;br&gt;ViewAnglePolicy&lt;br&gt;ViewAngleSceneInput · DrivingState&lt;br&gt;&lt;br&gt;纯 Java · 无 Android / 供应商依赖&lt;br&gt;其他业务模型仍待完善" vertex="1">
+          <mxGeometry height="135" width="266" x="27" y="113" as="geometry" />
+        </mxCell>
+        <mxCell id="ring-note" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=16;fontColor=#5D7287;" value="职责映射 ≠ 强行按目录分层：features 与 app-shell 含不同职责；runtime 是通用编排，并非全部属于领域用例。" vertex="1">
+          <mxGeometry height="60" width="870" x="70" y="1100" as="geometry" />
+        </mxCell>
+        <mxCell id="composition" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;rounded=1;arcSize=12;fillColor=#F0EAF9;strokeColor=#A78BC5;fontSize=15;spacing=10;" value="&lt;b&gt;装配根 · 最外层&lt;/b&gt;&lt;br&gt;app → products:s59b / p59a / s73b&lt;br&gt;app → app-shell → ProductRuntime（契约）&lt;br&gt;products 选择实现；Hilt 将端口与实现连接" vertex="1">
+          <mxGeometry height="120" width="620" x="1040" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="s59" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;rounded=1;arcSize=12;fillColor=#F7FAFE;strokeColor=#B7C9DD;fontSize=15;spacing=10;" value="&lt;b&gt;S59B&lt;/b&gt;　Bosch HAD ＋ Mega 车机&lt;br&gt;定位：Bosch 高精定位　｜　中控＋仪表＋视角　｜　无 HUD" vertex="1">
+          <mxGeometry height="80" width="620" x="1040" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="p59" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;rounded=1;arcSize=12;fillColor=#F7FAFE;strokeColor=#B7C9DD;fontSize=15;spacing=10;" value="&lt;b&gt;P59A&lt;/b&gt;　Momenta HAD ＋ DFTC 车机&lt;br&gt;定位：百度 EKF　｜　中控＋仪表　｜　无 HUD / 视角功能" vertex="1">
+          <mxGeometry height="80" width="620" x="1040" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="s73" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;rounded=1;arcSize=12;fillColor=#F7FAFE;strokeColor=#B7C9DD;fontSize=15;spacing=10;" value="&lt;b&gt;S73B&lt;/b&gt;　DFTC HAD ＋ DFTC 车机&lt;br&gt;定位：DFTC 高精定位　｜　中控＋视角＋显式许可 HUD　｜　无仪表" vertex="1">
+          <mxGeometry height="80" width="620" x="1040" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="ports" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;rounded=1;arcSize=12;fillColor=#FFF9E9;strokeColor=#D3B778;fontSize=15;spacing=10;" value="&lt;b&gt;contracts 是边界端口，不都属于领域实体&lt;/b&gt;&lt;br&gt;业务端口：had-api / platform-api / unity-api&lt;br&gt;融合端口：fusion-api（DTO、输入、状态）&lt;br&gt;启停端口：app-runtime-api（含 DataSessionLifecycle）&lt;br&gt;技术边界：someip-api / had-decoder-api / cluster-api / hud-api&lt;br&gt;线协议：had-proto / unity-proto" vertex="1">
+          <mxGeometry height="190" width="620" x="1040" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="assembly" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;rounded=1;arcSize=12;fillColor=#F3F5F8;strokeColor=#A8B5C4;fontSize=15;spacing=10;" value="&lt;b&gt;共享装配职责仍在 products&lt;/b&gt;&lt;br&gt;products:common：ReplaySession、FusionLifecycle、FusionBindings&lt;br&gt;products:dftc-common：P59A / S73B 共享显示生命周期&lt;br&gt;core:logging：窄职责基础能力；testing:*：仅测试依赖&lt;br&gt;emulator：开发装配，禁用 Release" vertex="1">
+          <mxGeometry height="130" width="620" x="1040" y="835" as="geometry" />
+        </mxCell>
+        <mxCell id="limits" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;rounded=1;arcSize=12;fillColor=#FFF3ED;strokeColor=#D89470;fontSize=15;spacing=10;" value="&lt;b&gt;当前实现边界&lt;/b&gt;&lt;br&gt;Momenta / DFTC：仅基础行车融合切片，完整业务未迁移&lt;br&gt;百度引擎另行接入；坐标 / 时钟未确认时不发送&lt;br&gt;HUD 尚需消费者接线；有图融合回放禁用；台架未验收" vertex="1">
+          <mxGeometry height="130" width="620" x="1040" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-title" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=23;align=left;" value="&lt;b&gt;依赖倒置细节：外层实现端口，内层只使用契约&lt;/b&gt;" vertex="1">
+          <mxGeometry height="40" width="1600" x="40" y="1190" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-sub" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=15;align=left;fontColor=#5D7287;" value="实线箭头＝使用 / 持有依赖　　虚线空心箭头＝实现接口　　下图为类级精选依赖，非全部 Gradle 依赖" vertex="1">
+          <mxGeometry height="30" width="1600" x="40" y="1235" as="geometry" />
+        </mxCell>
+        <mxCell id="latest" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;rounded=1;arcSize=12;fillColor=#FFF1DE;strokeColor=#DDA357;fontSize=15;spacing=10;" value="LatestFusionSession&lt;br&gt;runtime:fusion-input" vertex="1">
+          <mxGeometry height="60" width="140" x="40" y="1300" as="geometry" />
+        </mxCell>
+        <mxCell id="sink" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;rounded=1;arcSize=12;fillColor=#FFF8C9;strokeColor=#C5AD41;fontSize=15;spacing=10;" value="«接口»&lt;br&gt;FusionInputSink&lt;br&gt;contracts:fusion-api" vertex="1">
+          <mxGeometry height="60" width="140" x="220" y="1300" as="geometry" />
+        </mxCell>
+        <mxCell id="sdk" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;rounded=1;arcSize=12;fillColor=#E5F3E8;strokeColor=#6AA880;fontSize=15;spacing=10;" value="BaiduFusionSdk&lt;br&gt;SDK 实现" vertex="1">
+          <mxGeometry height="60" width="140" x="400" y="1300" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="latest" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=2;strokeColor=#385B7C;fontSize=13;labelBackgroundColor=#FFFFFF;endArrow=classic;" target="sink" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="sdk" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=2;strokeColor=#385B7C;fontSize=13;labelBackgroundColor=#FFFFFF;dashed=1;endArrow=block;endFill=0;" target="sink" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="life" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;rounded=1;arcSize=12;fillColor=#F0EAF9;strokeColor=#A78BC5;fontSize=15;spacing=10;" value="FusionLifecycle&lt;br&gt;唯一资源所有者" vertex="1">
+          <mxGeometry height="60" width="140" x="940" y="1300" as="geometry" />
+        </mxCell>
+        <mxCell id="session-port" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;rounded=1;arcSize=12;fillColor=#FFF8C9;strokeColor=#C5AD41;fontSize=15;spacing=10;" value="«接口»&lt;br&gt;DataSessionLifecycle" vertex="1">
+          <mxGeometry height="60" width="140" x="1120" y="1300" as="geometry" />
+        </mxCell>
+        <mxCell id="replay" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;rounded=1;arcSize=12;fillColor=#E5F3E8;strokeColor=#6AA880;fontSize=15;spacing=10;" value="ReplaySession&lt;br&gt;数据源实现" vertex="1">
+          <mxGeometry height="60" width="140" x="1300" y="1300" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="life" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=2;strokeColor=#385B7C;fontSize=13;labelBackgroundColor=#FFFFFF;endArrow=classic;" target="session-port" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="replay" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=2;strokeColor=#385B7C;fontSize=13;labelBackgroundColor=#FFFFFF;dashed=1;endArrow=block;endFill=0;" target="session-port" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="runtime" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;rounded=1;arcSize=12;fillColor=#F0EAF9;strokeColor=#A78BC5;fontSize=15;spacing=10;" value="FusionProductRuntime&lt;br&gt;串行异步启停" vertex="1">
+          <mxGeometry height="60" width="140" x="940" y="1420" as="geometry" />
+        </mxCell>
+        <mxCell id="bindings" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;rounded=1;arcSize=12;fillColor=#F0EAF9;strokeColor=#A78BC5;fontSize=15;spacing=10;" value="«接口»&lt;br&gt;FusionBindings&lt;br&gt;产品连接端口" vertex="1">
+          <mxGeometry height="60" width="140" x="1120" y="1420" as="geometry" />
+        </mxCell>
+        <mxCell id="product-impl" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;rounded=1;arcSize=12;fillColor=#E5F3E8;strokeColor=#6AA880;fontSize=15;spacing=10;" value="车型产品中的实现&lt;br&gt;就绪 / SDK 绑定" vertex="1">
+          <mxGeometry height="60" width="140" x="1300" y="1420" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="runtime" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=2;strokeColor=#385B7C;fontSize=13;labelBackgroundColor=#FFFFFF;endArrow=classic;" target="life" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="life" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=2;strokeColor=#385B7C;fontSize=13;labelBackgroundColor=#FFFFFF;endArrow=classic;" target="bindings" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="product-impl" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=2;strokeColor=#385B7C;fontSize=13;labelBackgroundColor=#FFFFFF;dashed=1;endArrow=block;endFill=0;" target="bindings" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="key-rule" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=17;align=left;" value="&lt;b&gt;依赖规则&lt;/b&gt;&lt;br&gt;共享代码不按车型分支；domain / features 不导入具体 adapter。&lt;br&gt;供应商原始 Proto 留在 HAD adapter；百度 SDK 类型不进入融合契约。&lt;br&gt;允许的外层例外：产品装配具体实现、adapter 封装自身 SDK。" vertex="1">
+          <mxGeometry height="120" width="780" x="40" y="1410" as="geometry" />
+        </mxCell>
+        <mxCell id="foot" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Helvetica;fontColor=#19334D;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;align=left;fontColor=#708397;" value="依据：settings.gradle、gradle/architecture.gradle、实际模块源码、docs/architecture.md、docs/baidu-fusion-design.md　｜　源码依赖与运行时数据方向需分别解读" vertex="1">
+          <mxGeometry height="30" width="1620" x="40" y="1550" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
